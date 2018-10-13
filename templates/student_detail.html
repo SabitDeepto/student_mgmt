@@ -1,0 +1,11 @@
+<h2> Detail of {{post.name}} </h2>
+
+<ul>
+
+	<li>Name: {{post.name}}</li>
+	<li>Roll: {{post.roll}}</li>
+	<li>Age: {{post.age}}</li>
+	<li>Gender: {{post.gender}}</li>
+	<li><a href="{% url 'single-post' post.guard.id %}"> Guardian: {{post.guard}}</li>
+
+</ul>

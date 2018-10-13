@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<h2>List of Guardians</h2>
+
+<ol>
+{% for post in all_post_list %}
+	
+	<li><a href="{% url 'single-post' post.pk %}"> {{post.Name}}</li> <br/>
+
+{% endfor %}
+</ol>
+
+</body>
+</html>

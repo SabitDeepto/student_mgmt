@@ -1,0 +1,6 @@
+<h2>Student List </h2>
+<ol>
+{% for post in all_post_list %}
+	<li><a href="{% url 'student_detail' post.pk %}"> {{post.name}}</li>
+{% endfor %}
+</ol>
